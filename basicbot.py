@@ -21,7 +21,7 @@ def stat_roll():
  
 
     
-wf = open("/home/myadmin/basicBot/logout.txt", "a")
+wf = open("./logout.txt", "a")
 
 
 now = str(datetime.now())
