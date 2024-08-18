@@ -80,6 +80,15 @@ async def on_message(msg):
         response = "good morning.  All is well here. How are you?"
         await msg.channel.send(response)
 
+    if 'hicago' in msg.content.lower():
+        response = random.choice(data["chicago_responses"])
+        await msg.channel.send(response)
+
+    if 'taylor green' in msg.content.lower():
+        response = random.choice(data["mtg"])
+        await msg.channel.send(response)
+
+
     await bot.process_commands(msg)
 
 
