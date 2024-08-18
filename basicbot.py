@@ -72,12 +72,12 @@ async def on_message(msg):
         response = random.choice(data["magic_8ball"])
         await msg.channel.send(response)
 
-    if 'good morning' in msg.content.lower():
-        response = "Morning. Will not complain. All is well here"
+    if 'morning' in msg.content.lower():
+        response = random.choice(data["morning_responses"])
         await msg.channel.send(response)
 
-    if msg.content.lower() == 'morning':
-        response = "good morning.  All is well here. How are you?"
+    if 'howsy' in msg.content.lower():
+        response = random.choice(data["morning_responses"])
         await msg.channel.send(response)
 
     if 'hicago' in msg.content.lower():
