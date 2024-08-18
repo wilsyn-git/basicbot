@@ -88,6 +88,11 @@ async def on_message(msg):
         response = random.choice(data["mtg"])
         await msg.channel.send(response)
 
+    if 'ancouver' in msg.content.lower():
+        response = random.choice(data["vancouver"])
+        await msg.channel.send(response)
+
+
 
     await bot.process_commands(msg)
 
