@@ -39,7 +39,7 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 TENOR_TOKEN = os.getenv('TENOR_KEY')
 
-with open('/home/myadmin/basicBot/botstuff.json') as f:
+with open('./botstuff.json') as f:
     data = json.load(f)
 
 
